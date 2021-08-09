@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bish-Bosh 1.0</title>
+</head>
+
+<body>
+    <h1>Bish-Bosh i konsolen</h1>
+</body>
+
+<script>
+    let numLine = [];
+    let endNum = 100;
+    for (let index = 0; index < endNum; index++) {
+        let num = index + 1;
+        if (num % 3 == 0) {
+            if (num % 4 == 0) {
+                numLine[index] = 'Bish-Bosh';
+            }
+            else {
+                numLine[index] = 'Bish';
+            }
+        }
+        else if (num % 4 == 0) {
+            numLine[index] = 'Bosh';
+        }
+        else {
+            numLine[index] = num;
+        }
+    }
+    console.log(numLine);
+</script>
+
+</html>
