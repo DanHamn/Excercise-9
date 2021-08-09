@@ -11,12 +11,18 @@ makeXWork()
 const submit = document.querySelector('#inputToDoList');
 submit.addEventListener('submit', e => {
     e.preventDefault();
-    
+
     let li = document.createElement("li");
+
     let inputValue = document.getElementById("addToList").value;
     let t = document.createTextNode(inputValue);
     li.appendChild(t);
-    document.getElementById("theToDoList").appendChild(li);
+    if (inputValue == '') {
+        alert("You must write something!");
+    }
+    else {
+        document.getElementById("theToDoList").appendChild(li);
+    }
     document.getElementById("addToList").value = "";
 
     appendX(li);
