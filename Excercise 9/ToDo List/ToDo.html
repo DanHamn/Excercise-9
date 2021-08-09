@@ -8,43 +8,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>ToDo lista</title>
 </head>
-<header>
-    <div class="container mainColor" >
-        <h3>Input till ToDo listan</h3>
+<div class="min-100 container mainColor">
+    <header class="pt-5">
+        <h1 class="display-1 text-center myBorder">ToDo-List</h1>
+    </header>
+    <div>
+        <hr>
         <form id="inputToDoList">
             <input type="text" id="addToList" placeholder="Lägg till i ToDo listan">
             <button type="submit" id="addBtn">Lägg till</button>
         </form>
         <br>
+        <div class="container">
+            <button type="button" id="markUnmarkAllBtn">Markera alla</button>
+            <button type="button" id="removeAllBtn">Töm listan</button>
+        </div>
     </div>
+    <hr>
 
-</header>
+    <body>
+        <div>
+            <div class="" id="nav">
+                <ul id="theToDoList">
+                    <li>Hej</li>
+                    <li>Test</li>
+                </ul>
+            </div>
+            <br>
+            <!-- <div class="container">
+                <button type="button" id="markUnmarkAllBtn">Markera alla</button>
+            </div> -->
+        </div>
 
-<body>
-    <div class="container mainColor" id="nav">
-        <ul id="theToDoList">
-            <li>Hej</li>
-            <li>Test</li>
-        </ul>
-    </div>
-
-    <div class="container mainColor mb-3">
-        <button type="button" id="markUnmarkAllBtn">Markera alla</button>
-    </div>
-
-    <script src="ToDoList.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-</body>
-
-<footer class="pt-5 text-center">
-    <div class="container border-1">
+        <script src="ToDoList.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+    </body>
+</div>
+<footer class="pt-5">
+    <div class="container myBorder">
         <small>
             &copy;2021 Daniel Hamnevik
         </small>
     </div>
 </footer>
+
 </html>

@@ -1,6 +1,12 @@
-table { border-collapse: collapse; }
+table {
+  border-collapse: collapse;
+}
+
 table tr td {
   border: 1px solid #000;
   padding: 10px;
 }
-table td:nth-child(odd) { background: #f4f4f4; }
+
+table td:nth-child(odd) {
+  background: #f4f4f4;
+}
